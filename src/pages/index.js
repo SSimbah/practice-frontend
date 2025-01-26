@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import {Box, Text} from "@chakra-ui/react"
+import {Box, Heading, Text} from "@chakra-ui/react"
 import UseStateString from "./owie/useStateString";
 import UseStateNumber from "./owie/UseStateNumber";
 import UseStateBoolean from "./owie/UseStateBoolean";
@@ -17,7 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <main className={styles.main}>
-        <Box>
+        <Box m="10">
+          <Heading>UseState and UseEffect Practice</Heading>
           <Text color="Red">String</Text>
           <UseStateString></UseStateString>
           <hr/>
